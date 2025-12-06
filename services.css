@@ -1,0 +1,114 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+/* Navbar (Right-aligned horizontally) */
+.navbar {
+    position: fixed;  /* Fix navbar to the right side */
+    top: 0;
+    right: 0;        /* Align the navbar to the right edge */
+    padding: 20px 20px;  /* Padding inside the navbar */
+    background-color: transparent;  /* Transparent background */
+    z-index: 1000;    /* Ensure it's on top */
+    display: flex;
+    justify-content: flex-end;  /* Align the links to the right */
+}
+
+.nav-links {
+    list-style: none; /* Remove bullet points */
+    display: flex;    /* Align the links horizontally */
+    gap: 20px;        /* Space between the links */
+}
+
+.nav-links a {
+    color: #fff;      /* White text */
+    text-decoration: none;
+    font-size: 18px;   /* Link font size */
+    padding: 8px 15px;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;    /* Hover effect (yellow color) */
+}
+
+/* Hero Section with Background Image */
+.hero {
+    width: 100%;
+    height: 60vh;
+    background-image: url('services.png'); /* local PNG */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1; /* Ensure hero stays below navbar */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #f1f1f1;
+}
+
+/* Services Content */
+.services-content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.service-item {
+    margin-bottom: 30px;
+}
+
+.service-item h2 {
+    font-size: 1.8rem;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    font-size: 1.1rem;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.services-note {
+    margin-top: 40px;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .service-item h2 {
+        font-size: 1.5rem;
+    }
+    .service-item p {
+        font-size: 1rem;
+    }
+
+    .navbar {
+        top: 10px; /* Add some space at the top for mobile view */
+    }
+
+    .nav-links {
+        gap: 15px; /* Adjust gap on smaller screens */
+    }
+}

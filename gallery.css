@@ -1,0 +1,39 @@
+/* Global Reset and Body Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background for the page */
+    color: #fff; /* White text */
+}
+
+/* Navbar links only - No background container */
+.nav-links {
+    position: fixed;   /* Fix it to the top-right corner */
+    top: 10px;         /* Space from the top */
+    right: 10px;       /* Space from the right */
+    list-style: none;  /* No bullets */
+    display: flex;     /* Align links horizontally */
+    gap: 15px;         /* Space between the links */
+    margin: 0;         /* Remove any extra margin */
+    padding: 0;        /* Remove any extra padding */
+}
+
+.nav-links li {
+    margin: 0;         /* No margin on list items */
+}
+
+.nav-links a {
+    color: white;      /* White text color */
+    text-decoration: none;  /* No underline on links */
+    font-size: 16px;     /* Font size for links */
+    padding: 5px 10px;  /* Space around the links */
+}
+
+.nav-links a:hover {
+    color: #f39c12;      /* Change to gold when hovered */
+}

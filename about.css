@@ -1,0 +1,120 @@
+/* Global Reset and Body Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('about.png'); /* Set the background image for the entire page */
+    background-size: cover;  /* Ensure the image covers the whole screen */
+    background-position: center; /* Center the image */
+    color: #fff; /* White text */
+    min-height: 100vh; /* Ensure the body takes up at least the full height of the screen */
+    background-attachment: fixed; /* Optional: makes the background image fixed while scrolling */
+}
+
+/* Navbar (Top-right position) */
+.navbar {
+    position: fixed;  /* Fix navbar in the top-right corner */
+    top: 0;           /* Align to the top of the page */
+    right: 0;         /* Align to the right edge */
+    padding: 10px 20px;  /* Optional padding for spacing */
+    background-color: transparent;  /* Make the background transparent */
+    z-index: 1000;    /* Make sure it's above other content */
+}
+
+.nav-links {
+    list-style: none;  /* Remove bullet points */
+    display: flex;     /* Arrange items horizontally */
+    gap: 15px;         /* Space between links */
+}
+
+.nav-links li {
+    margin: 0;         /* Remove any extra margin */
+}
+
+.nav-links a {
+    color: white;       /* White text color */
+    text-decoration: none;  /* Remove underline */
+    font-size: 16px;     /* Adjust font size */
+    padding: 10px 15px;  /* Padding inside the links */
+}
+
+.nav-links a:hover {
+    color: #f39c12;      /* Hover effect (change color when hovered) */
+}
+
+/* About Header Section */
+.about-header {
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    background: none; /* Completely reset background */
+}
+
+.about-header h1, .about-header p {
+    font-size: 3rem; /* Make header text larger */
+    font-weight: bold;
+    background: none;  /* Completely reset background */
+    color: white;
+    text-shadow: none; /* No text shadow */
+}
+
+/* About Content Section */
+.about-content {
+    padding: 20px;
+    margin-top: 20px;
+    background: none; /* Completely reset background */
+    color: #fff; /* Ensure text is white */
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+    background: none;  /* Completely reset background */
+}
+
+.about-content ul {
+    margin-top: 10px;
+    list-style-type: none;
+    padding-left: 20px;
+    background: none;  /* Completely reset background */
+}
+
+.about-content ul li {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    background: none;  /* Completely reset background */
+}
+
+/* Footer Section */
+.about-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+}
+
+.about-footer p {
+    font-size: 1rem;
+    color: #999;
+}
+
+/* About Middle Section */
+.about-middle {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.about-middle h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    background: none;  /* Completely reset background */
+}
+
+.about-middle p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    background: none;  /* Completely reset background */
+}

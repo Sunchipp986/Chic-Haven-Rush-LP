@@ -1,0 +1,195 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navbar container */
+.navbar {
+    position: relative; /* allows the logo to position inside */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Text logo */
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Top-right logo image */
+.top-right-logo {
+    position: absolute;
+    top: 50px;   /* subtle but enough to clear the Contact link */
+    right: 20px;
+    width: 150px;   /* larger logo now */
+    height: auto;
+}
+
+}
+
+/* Navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #000;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #555;
+}
+
+/* Header background (you can add your background rules here) */
+
+.hero {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.8)
+    ),
+    url('garage-background.jpg') center/cover no-repeat;
+    color: #fff;
+    padding: 40px 8%;
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #eaeaea;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #cccccc;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff6b2b;
+}
+
+/* Hero Content */
+.hero-content {
+    margin-top: 10%;
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 3.2rem;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.hero-content p {
+    color: #d1d1d1;
+    font-size: 1.1rem;
+    max-width: 500px;
+}
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 90vh;
+    background: url('garage-hero.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+    color: #fff;
+}
+
+/* Dark Gradient Overlay */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.85),
+        rgba(0, 0, 0, 0.6)
+    );
+    z-index: 1;
+}
+
+/* Text Content */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #cfcfcf;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;  /* full viewport height */
+    background-image: url('background.png');  /* your image */
+    background-size: cover;      /* makes the image cover entire area */
+    background-position: center; /* centers the image */
+    background-repeat: no-repeat;
+    position: relative;          /* keeps absolutely positioned elements inside */
+}
+/* Hidden but readable disclaimer */
+.disclaimer {
+    font-size: 0.8rem;
+    color: #999;       /* subtle gray */
+    text-align: center;
+    margin-top: 20px;
+    opacity: 0.7;      /* slightly faded */
+}
+/* Position the video at the bottom-right corner */
+.video-container {
+    position: absolute;
+    bottom: 20px;  /* Distance from the bottom of the page */
+    right: 20px;   /* Distance from the right side of the page */
+    z-index: 10;   /* Ensure it stays on top of other content */
+}
+
+video {
+    width: 500px;  /* Slightly smaller width */
+    height: 280px; /* Slightly smaller height */
+}
