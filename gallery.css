@@ -37,3 +37,19 @@ body {
 .nav-links a:hover {
     color: #f39c12;      /* Change to gold when hovered */
 }
+
+/* ----------------------------------- */
+/* Download Buttons (Flexbox Layout)   */
+/* ----------------------------------- */
+
+.download-buttons {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    padding: 40px;
+}
+
+.right-download {
+    margin-left: auto; /* Pushes this button to the far right */
+}
