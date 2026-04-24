@@ -114,3 +114,9 @@ body {
     height: auto !important;
     display: block;
 }
+.second-button {
+    top: 120px; /* pushes it below the first button */
+}
+.third-button {
+    top: 230px; /* below the second button */
+}
