@@ -177,5 +177,35 @@
 
 </div>
 
+</div>
+
+<!-- Sound Effects -->
+<audio id="hoverSound" preload="auto">
+    <source src="poloroid paper.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="clickSound" preload="auto">
+    <source src="poloroid pull.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+const hoverSound = document.getElementById('hoverSound');
+const clickSound = document.getElementById('clickSound');
+
+document.querySelectorAll('.download-button').forEach(button => {
+
+    button.addEventListener('mouseenter', () => {
+        hoverSound.currentTime = 0;
+        hoverSound.play().catch(() => {});
+    });
+
+    button.addEventListener('click', () => {
+        clickSound.currentTime = 0;
+        clickSound.play().catch(() => {});
+    });
+
+});
+</script>
+
 </body>
 </html>
